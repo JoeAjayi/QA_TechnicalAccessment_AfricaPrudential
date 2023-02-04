@@ -11,7 +11,8 @@ public class DashBoardPage extends BasePage {
 
 
 
-	@FindBy(xpath = "//strong[contains(text(),'Welcome')]")
+	@FindBy(xpath = "//strong[normalize-space()='Welcome']")
+//	@FindBy(xpath = "//p[@class='sc-AxhUy gUCAUW']")
 	@CacheLookup
 	WebElement dashboardPageWelcomeText; 
 

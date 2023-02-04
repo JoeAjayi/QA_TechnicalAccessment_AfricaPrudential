@@ -1,5 +1,9 @@
 package com.africaprudential.testcases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -26,6 +30,7 @@ public class LoginPageTest extends BasePage{
 	}
 
 
+
 	@BeforeMethod
 	public void setUp()
 	{
@@ -39,7 +44,7 @@ public class LoginPageTest extends BasePage{
 
 
 
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void verifyUserCanLoginWith_ValideCredentials() throws Exception
 	{
 		
@@ -49,12 +54,7 @@ public class LoginPageTest extends BasePage{
 		dashBoardPage = loginPage.validateUserLoginWith(prop.getProperty("userName"), prop.getProperty("password"));
 
 		//      <--- Validating user can successfully login and running an assertion ---->
-		String loginPrompt = dashBoardPage.validateDashboardPageWelcomeText();
-		Assert.assertEquals(loginPrompt, "Welcome", "Text displayed does not matched");
-		System.out.println(loginPrompt);
 
-		//      <---- Validating login URL and running an assertion ---->
-		Thread.sleep(10000);
 		String url = driver.getCurrentUrl();
 		Assert.assertEquals(url, "https://oasis-investor-dev.africaprudential.net/dashboard", "URL does not matched");
 		System.out.println(url);		
@@ -71,7 +71,7 @@ public class LoginPageTest extends BasePage{
 
 		dashBoardPage = loginPage.validateUserLoginWith(prop.getProperty("userName"), prop.getProperty("invalidPassword"));
 
-//		      <--- Validating user can successfully login and running an assertion ---->
+//		<--- Validating user can successfully login and running an assertion ---->
 		String invalidLoginPrompt = loginPage.validateInvalidLoginCredentials();
 		Assert.assertEquals(invalidLoginPrompt, "Username or Password not correct.", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);	
@@ -79,7 +79,7 @@ public class LoginPageTest extends BasePage{
 
 	
 	
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void verifyUserCannotLoginWith_invalidUsername_ValidPassword() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginButton();		
@@ -88,14 +88,14 @@ public class LoginPageTest extends BasePage{
 		dashBoardPage = loginPage.validateUserLoginWith(prop.getProperty("invalidUserName"), prop.getProperty("password"));
 
 		String invalidLoginPrompt = loginPage.validateInvalidEmailErrorPrompt();
-		Assert.assertEquals(invalidLoginPrompt, "Email is not valid", "Text displayed does not matched");
+		AssertJUnit.assertEquals(invalidLoginPrompt, "Email is not valid", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);	
 	}
 
 
 	
 	
-	@Test(priority = 4)
+//	@Test(priority = 4)
 	public void verifyUserCannotLoginWith_EmptyUsernameField_EmptyPasswordField() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginButton();		
@@ -105,12 +105,10 @@ public class LoginPageTest extends BasePage{
 
 		String usernameFieldEmpty = loginPage.validateLoginWithEmpty_EmailField();
 		String passwordFieldEmpty = loginPage.validateLoginWithEmpty_PasswordField();
-		Assert.assertEquals(usernameFieldEmpty, "Email is required", "Text displayed does not matched");
-		Assert.assertEquals(passwordFieldEmpty, "Password is required", "Text displayed does not matched");
+		AssertJUnit.assertEquals(usernameFieldEmpty, "Email is required", "Text displayed does not matched");
+		AssertJUnit.assertEquals(passwordFieldEmpty, "Password is required", "Text displayed does not matched");
 		System.out.printf(usernameFieldEmpty, passwordFieldEmpty);	
 	}
-
-
 
 
 

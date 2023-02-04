@@ -5,11 +5,9 @@
     <classes>
       <class name="com.africaprudential.testcases.LoginPageTest">
         <methods>
-          <include name="verifyUserCannotLoginWith_invalidUsername_ValidPassword"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="verifyUserCannotLoginWith_ValidUsername_InvalidPasswor"/>
-          <include name="verifyUserCannotLoginWith_EmptyUsernameField_EmptyPasswordField"/>
         </methods>
       </class> <!-- com.africaprudential.testcases.LoginPageTest -->
     </classes>

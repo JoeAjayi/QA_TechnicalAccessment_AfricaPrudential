@@ -17,7 +17,7 @@ public class LoginPage extends BasePage{
 //	@FindBy(xpath = "//h2[normalize-space()='Welcome Back!']")
 	@FindBy(xpath = "//h2[contains(text(),'Welcome Back!')]")
 	@CacheLookup
-	WebElement loginPageWelcome; 
+	WebElement loginPageWelcomeText; 
 	
 	
 
