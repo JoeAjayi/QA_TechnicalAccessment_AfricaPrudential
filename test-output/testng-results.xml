@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="108830" started-at="2023-02-04T00:20:35 WAT" finished-at="2023-02-04T00:22:24 WAT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="108830" started-at="2023-02-04T00:20:35 WAT" finished-at="2023-02-04T00:22:24 WAT">
+      <class name="com.africaprudential.testcases.UserProfilePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="setUp" is-config="true" duration-ms="12685" started-at="2023-02-04T00:20:35 WAT" finished-at="2023-02-04T00:20:48 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanUpdateCity()[pri:1, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="verifyUserCanUpdateCity" duration-ms="15896" started-at="2023-02-04T00:20:48 WAT" finished-at="2023-02-04T00:21:04 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanUpdateCity -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="tearDown" is-config="true" duration-ms="2135" started-at="2023-02-04T00:21:04 WAT" finished-at="2023-02-04T00:21:06 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="setUp" is-config="true" duration-ms="6500" started-at="2023-02-04T00:21:06 WAT" finished-at="2023-02-04T00:21:12 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanUpdateNextOfKinPhoneNumber()[pri:2, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="verifyUserCanUpdateNextOfKinPhoneNumber" duration-ms="15945" started-at="2023-02-04T00:21:12 WAT" finished-at="2023-02-04T00:21:28 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanUpdateNextOfKinPhoneNumber -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="tearDown" is-config="true" duration-ms="2133" started-at="2023-02-04T00:21:28 WAT" finished-at="2023-02-04T00:21:30 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="setUp" is-config="true" duration-ms="12227" started-at="2023-02-04T00:21:30 WAT" finished-at="2023-02-04T00:21:42 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanUpdateTaxRate()[pri:3, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="verifyUserCanUpdateTaxRate" duration-ms="15844" started-at="2023-02-04T00:21:42 WAT" finished-at="2023-02-04T00:21:58 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanUpdateTaxRate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="tearDown" is-config="true" duration-ms="2127" started-at="2023-02-04T00:21:58 WAT" finished-at="2023-02-04T00:22:00 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="setUp" is-config="true" duration-ms="7357" started-at="2023-02-04T00:22:00 WAT" finished-at="2023-02-04T00:22:08 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanAddAccountNumber()[pri:4, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="verifyUserCanAddAccountNumber" duration-ms="13775" started-at="2023-02-04T00:22:08 WAT" finished-at="2023-02-04T00:22:22 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAddAccountNumber -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.africaprudential.testcases.UserProfilePageTest@6a1d3225]" name="tearDown" is-config="true" duration-ms="2135" started-at="2023-02-04T00:22:22 WAT" finished-at="2023-02-04T00:22:24 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.africaprudential.testcases.UserProfilePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
