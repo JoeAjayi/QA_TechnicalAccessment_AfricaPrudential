@@ -5,10 +5,6 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import com.africaprudential.base.BasePage;
 import com.africaprudential.pages.DashBoardPage;
 import com.africaprudential.pages.HomePage;
@@ -44,7 +40,7 @@ public class LoginPageTest extends BasePage{
 
 
 
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void verifyUserCanLoginWith_ValideCredentials() throws Exception
 	{
 		
@@ -71,7 +67,6 @@ public class LoginPageTest extends BasePage{
 
 		dashBoardPage = loginPage.validateUserLoginWith(prop.getProperty("userName"), prop.getProperty("invalidPassword"));
 
-//		<--- Validating user can successfully login and running an assertion ---->
 		String invalidLoginPrompt = loginPage.validateInvalidLoginCredentials();
 		Assert.assertEquals(invalidLoginPrompt, "Username or Password not correct.", "Text displayed does not matched");
 		System.out.println(invalidLoginPrompt);	
@@ -79,7 +74,7 @@ public class LoginPageTest extends BasePage{
 
 	
 	
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void verifyUserCannotLoginWith_invalidUsername_ValidPassword() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginButton();		
@@ -95,7 +90,7 @@ public class LoginPageTest extends BasePage{
 
 	
 	
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void verifyUserCannotLoginWith_EmptyUsernameField_EmptyPasswordField() throws Exception
 	{
 		loginPage = homePage.validateClickOnLoginButton();		

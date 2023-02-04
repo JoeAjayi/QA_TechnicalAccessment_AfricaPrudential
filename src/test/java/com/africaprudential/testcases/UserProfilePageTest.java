@@ -3,10 +3,6 @@ package com.africaprudential.testcases;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import com.africaprudential.base.BasePage;
 import com.africaprudential.pages.DashBoardPage;
 import com.africaprudential.pages.HomePage;
